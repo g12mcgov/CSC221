@@ -1,0 +1,40 @@
+Customer customer;
+				line.dequeue(customer);
+				cout << "Customer arriving in Queue at time " << customer.getArrivalTime() << ". " << "This customer will require " << serv << " minutes of service." << endl;
+				//update information to get average wait.
+				numberOfCustomers++;
+				//wait = i - customer.getArrivalTime();
+				totalWait = totalWait + customer.getArrivalTime();
+				cout << "Customer going to teller " << i << " at time " << customer.getArrivalTime() << endl;
+				cout << "This customer had to wait in line for " << totalWait << " minutes" << endl;
+				cout << "This customer will be finished at time " << (serv + i) << "." << endl;
+				totalCustomerTime = serv - customer.getArrivalTime();
+				teller[i].addCustomer(customer);
+				line.remove(customer);
+
+
+
+/*check this*/	/*
+				if(teller[i].isFree())
+				{
+					cout << "Teller " << i << " is now free." << endl;
+					cout << "Customer going to teller " << i << " at time " << customer.getArrivalTime() << endl;
+					teller[i].addCustomer(customer);
+					cout << "This customer had to wait in line for " << totalWait << " minutes" << endl;
+					cout << "This customer will be finished at time " << (serv + i) << ".";
+					cout << endl;
+				}
+				line.remove(customer);
+				*/
+
+				/*
+				teller[i].addCustomer(customer);
+				cout << endl;
+				line.remove(customer);
+				cout << "Teller " << i << " is now finished." << endl;
+				*/
+			}
+			else
+			{
+				//
+			}

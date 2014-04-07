@@ -1,0 +1,30 @@
+#Define the compiler
+
+CC=g++
+# 
+Define the compiler options
+
+CFLAGS=-O2
+# 
+Define the linker
+LINK=g++
+
+#all: InfixToPostFix
+
+
+# Define the dependencies
+InfixToPostFix: InfixToPostFix.o
+	
+	$(LINK) -o InfixToPostFix InfixToPostFix.o
+	
+
+InfixToPostFix.o: InfixToPostFix.cpp 
+	
+	$(CC) -c $(CFLAGS) -std=c++0x InfixToPostFix.cpp 
+
+
+###
+clean:
+	
+	/bin/rm -f InfixToPostFix InfixToPostFix.o	
+ 
