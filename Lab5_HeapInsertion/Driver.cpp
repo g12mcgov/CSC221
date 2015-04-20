@@ -1,5 +1,16 @@
 //Driver.cpp
 
+/*
+
+Grant McGovern 
+Dr. Burg 
+CSC 221 
+8 April 2014 
+
+<For description and how-to-run, please see the ReadMe.txt file/>
+
+*/
+
 #include <iostream>
 #include "Sort.h"
 #include <vector>
@@ -55,8 +66,8 @@ int main()
 
     do
     {
-        displayMenu();
-        cin >> num;
+        displayMenu(); //function to read off the menu options
+        cin >> num; //takes in switch option response 
         cout << endl;
 
         switch(num)
@@ -84,7 +95,7 @@ int main()
                 else
                 {
                     cout << "Invalid Selection, please try again. " << endl;
-                    goto heapsort_tryagain1;
+                    goto heapsort_tryagain1; // allows the user to try again 
                 }
                 //jumpahead1:;
 
@@ -113,7 +124,7 @@ int main()
                 else
                 {
                     cout << "Invalid Selection, please try again. " << endl;
-                    goto heapsort_tryagain2;
+                    goto heapsort_tryagain2; // allows the user to try again 
                 }
                 //jumpahead2:;
                 break;
@@ -141,7 +152,7 @@ int main()
                 else
                 {
                     cout << "Invalid Selection, please try again. " << endl;
-                    goto heapsort_tryagain3;
+                    goto heapsort_tryagain3; // allows the user to try again 
                 }
                 //jumpahead3:;
 
@@ -170,7 +181,7 @@ int main()
                 else
                 {
                     cout << "Invalid Selection, please try again. " << endl;
-                    goto heapsort_tryagain4;
+                    goto heapsort_tryagain4; // allows the user to try again 
                 }
                 // jumpahead4:;
                 break;

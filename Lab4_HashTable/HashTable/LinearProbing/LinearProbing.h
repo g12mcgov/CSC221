@@ -81,46 +81,6 @@ public:
 		currentSize++; //iterates currentSize
 		if(++currentSize > array.size()) //if the table size is greater than the size of the symbol vector... rehash
 			rehash();
-		/*cout << "Trying to insert at position " << currentPos << endl;
-		bool done = false;
-		if(isActive(currentPos))
-		{
-			//cout << "Collision at index " << currentPos << endl;
-			int i=currentPos+1;
-			//cout << "array.size() = " << array.size() << endl;
-			if (i == array.size())
-				i = 0;
-			while(!done)
-			{
-				//cout << "Trying index " << i << endl;
-				if(i == currentPos)
-				{
-					done = true;
-					rehash();
-					//cout << "Rehashing " << endl;
-				}
-				else if(!isActive(i))
-				{
-					array[i] = HashEntry(x, ACTIVE);
-					done = true;
-				}
-				else
-				{
-					i++;
-					if(i == array.size())
-					{
-						i = 0;
-					}
-
-				}
-			}
-
-		}
-		else
-		{
-			//cout << "inserting " << x.getData() << " at position " << currentPos << endl;
-			array[currentPos] = HashEntry(x, ACTIVE);
-		}*/
 		return true;
 	}
 	bool remove(const HashedObj & x) //removes a HashedObj from the HashTable

@@ -1,3 +1,16 @@
+//Sort.h
+
+/*
+
+Grant McGovern 
+Dr. Burg 
+CSC 221 
+8 April 2014 
+
+<For description and how-to-run, please see the ReadMe.txt file/>
+
+*/
+
 #ifndef SORT_H
 #define SORT_H
 
